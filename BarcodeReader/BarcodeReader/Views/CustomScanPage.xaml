@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:controls="clr-namespace:BarcodeReader.AdMob" 
+             x:Class="BarcodeReader.Views.CustomScanPage"
+             Title="スキャン">
+  <StackLayout HorizontalOptions="Center" x:Name="MainBoard">
+        <Label Text="画面にバーコードを入れてね" HorizontalOptions="CenterAndExpand" />
+        <controls:AdMobBanner WidthRequest="400" HeightRequest="70"
+       AbsoluteLayout.LayoutFlags="PositionProportional"
+       AbsoluteLayout.LayoutBounds="0, 1, AutoSize, AutoSize"></controls:AdMobBanner>
+  </StackLayout>
+</ContentPage>
